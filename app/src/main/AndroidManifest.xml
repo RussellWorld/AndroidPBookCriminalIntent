@@ -20,15 +20,18 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.criminalintent.FileProvider"
+            android:authorities="com.example.criminalintent.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
-                android:name="android.support.FILE_PROVIDERS_PATHS"
+                android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/files" />
 
         </provider>
 
     </application>
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="false" />
 
 </manifest>
